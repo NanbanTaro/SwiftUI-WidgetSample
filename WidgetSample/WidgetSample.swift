@@ -55,24 +55,48 @@ struct WidgetSampleEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        switch family {
-        case .systemSmall:
-            Text("systemSmall")
-        case .systemMedium:
-            Text("systemMedium")
-        case .systemLarge:
-            Text("systemLarge")
-        case .systemExtraLarge:
-            Text("systemExtraLarge")
-        case .accessoryInline:
-            Text("accessoryInline")
-        case .accessoryCircular:
-            Text("accessoryCircular")
-        case .accessoryRectangular:
-            Text("accessoryRectangular")
-        default:
-            Text("default")
+        Group {
+            switch family {
+            case .systemSmall:
+                Text("systemSmall")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            case .systemMedium:
+                Text("systemMedium")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            case .systemLarge:
+                Text("systemLarge")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            case .systemExtraLarge:
+                Text("systemExtraLarge")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            case .accessoryInline:
+                Text("accessoryInline")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            case .accessoryCircular:
+                Text("accessoryCircular")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            case .accessoryRectangular:
+                Text("accessoryRectangular")
+                Link(destination: URL(string: "widgetSample://detail?id=1")!) {
+                    Text("link")
+                }
+            default:
+                Text("default")
+            }
         }
+        .widgetURL(URL(string: "widgetSample://detail?id=0"))
 
 //        VStack {
 //            Text("Time:")

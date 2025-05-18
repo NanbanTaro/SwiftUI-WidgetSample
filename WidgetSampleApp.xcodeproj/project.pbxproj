@@ -51,11 +51,21 @@
 			);
 			target = 90128CB82DD98E0B009AE7DD /* WidgetSampleExtension */;
 		};
+		90128CD42DD9C9BE009AE7DD /* Exceptions for "WidgetSampleApp" folder in "WidgetSampleApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 90128C9A2DD8B2E1009AE7DD /* WidgetSampleApp */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		90128C9D2DD8B2E1009AE7DD /* WidgetSampleApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				90128CD42DD9C9BE009AE7DD /* Exceptions for "WidgetSampleApp" folder in "WidgetSampleApp" target */,
+			);
 			path = WidgetSampleApp;
 			sourceTree = "<group>";
 		};
@@ -378,6 +388,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetSampleApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -406,6 +417,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetSampleApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
