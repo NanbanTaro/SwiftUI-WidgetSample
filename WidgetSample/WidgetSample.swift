@@ -97,14 +97,6 @@ struct WidgetSampleEntryView : View {
             }
         }
         .widgetURL(URL(string: "widgetSample://detail?id=0"))
-
-//        VStack {
-//            Text("Time:")
-//            Text(entry.date, style: .time)
-//
-//            Text("Emoji:")
-//            Text(entry.emoji)
-//        }
     }
 }
 
